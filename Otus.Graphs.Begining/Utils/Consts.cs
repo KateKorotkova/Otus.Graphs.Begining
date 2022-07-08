@@ -2,6 +2,6 @@
 {
     public static class Consts
     {
-        public static string FirstGraphFileName => @"FirstGraph\firs_graph_points.txt";
+        public static string FirstGraphFileName => @"FirstGraph\Info\first_graph_points.txt";
     }
 }

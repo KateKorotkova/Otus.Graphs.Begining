@@ -6,10 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="FirstGraph\first_graph.jpeg">
+    <None Update="FirstGraph\Info\first_graph.jpeg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="FirstGraph\firs_graph_points.txt">
+    <None Update="FirstGraph\Info\first_graph_points.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
