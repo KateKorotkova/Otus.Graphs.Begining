@@ -9,9 +9,9 @@ namespace Tests
         [Test]
         public void Can_Get_Adjacency_Matrix()
         {
-            var graph = new FirstGraphProcessor();
+            var graph = new FirstGraphAdjacencyMatrixProcessor();
 
-            var result = graph.GetAdjacencyMatrix();
+            var result = graph.Matrix;
 
             Assert.That(result.GetLength(0), Is.EqualTo(6));
             Assert.That(result.GetLength(1), Is.EqualTo(6));
@@ -29,7 +29,7 @@ namespace Tests
         [TestCase(5, 5, ExpectedResult = true)]
         public bool Can_Check_Adjacency(int firstVertex, int secondVertex)
         {
-            var graph = new FirstGraphProcessor();
+            var graph = new FirstGraphAdjacencyMatrixProcessor();
 
             return graph.AreAdjacency(firstVertex, secondVertex);
         }
@@ -37,7 +37,7 @@ namespace Tests
         [Test]
         public void Can_Get_Adjacency_Vertexes()
         {
-            var graph = new FirstGraphProcessor();
+            var graph = new FirstGraphAdjacencyMatrixProcessor();
 
             var result = graph.GetAdjacencyVertexes(2);
 
@@ -50,7 +50,7 @@ namespace Tests
         [Test]
         public void Can_Get_Vertex_Degree()
         {
-            var graph = new FirstGraphProcessor();
+            var graph = new FirstGraphAdjacencyMatrixProcessor();
 
             var result = graph.GetVertexDegree(4);
 
