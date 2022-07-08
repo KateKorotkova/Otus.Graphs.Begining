@@ -47,6 +47,16 @@ namespace Tests
            Assert.That(result[2], Is.EqualTo(4));
         }
 
+        [Test]
+        public void Can_Get_Vertex_Degree()
+        {
+            var graph = new FirstGraphProcessor();
+
+            var result = graph.GetVertexDegree(4);
+
+            Assert.That(result, Is.EqualTo(2));
+        }
+
 
         #region Support Methods
 

@@ -58,5 +58,10 @@ namespace Otus.Graphs.Begining.FirstGraph
 
             return adjacencyVertexes.ToArray();
         }
+
+        public int GetVertexDegree(int vertex)
+        {
+            return GetAdjacencyVertexes(vertex).Length;
+        }
     }
 }
