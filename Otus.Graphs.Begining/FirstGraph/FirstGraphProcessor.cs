@@ -1,4 +1,5 @@
-﻿using Otus.Graphs.Begining.Utils;
+﻿using System.Collections.Generic;
+using Otus.Graphs.Begining.Utils;
 
 namespace Otus.Graphs.Begining.FirstGraph
 {
@@ -40,6 +41,22 @@ namespace Otus.Graphs.Begining.FirstGraph
             var matrix = GetAdjacencyMatrix();
 
             return matrix[firstVertex, secondVertex] != 0;
+        }
+
+        public int[] GetAdjacencyVertexes(int vertex)
+        {
+            var matrix = GetAdjacencyMatrix();
+
+            var adjacencyVertexes = new List<int>();
+            for (var i = 0; i < matrix.GetLength(1); i++)
+            {
+                if (matrix[vertex, i] != 0)
+                {
+                    adjacencyVertexes.Add(i);
+                }
+            }
+
+            return adjacencyVertexes.ToArray();
         }
     }
 }

@@ -34,6 +34,19 @@ namespace Tests
             return graph.AreAdjacency(firstVertex, secondVertex);
         }
 
+        [Test]
+        public void Can_Get_Adjacency_Vertexes()
+        {
+            var graph = new FirstGraphProcessor();
+
+            var result = graph.GetAdjacencyVertexes(2);
+
+           Assert.That(result.Length, Is.EqualTo(3));
+           Assert.That(result[0], Is.EqualTo(1));
+           Assert.That(result[1], Is.EqualTo(3));
+           Assert.That(result[2], Is.EqualTo(4));
+        }
+
 
         #region Support Methods
 
