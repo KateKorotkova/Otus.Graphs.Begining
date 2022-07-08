@@ -4,7 +4,7 @@ namespace Otus.Graphs.Begining.FirstGraph
 {
     public class FirstGraphProcessor
     {
-        private GraphFileInfo _graphFileInfo;
+        private readonly GraphFileInfo _graphFileInfo;
 
         public FirstGraphProcessor()
         {
@@ -16,23 +16,19 @@ namespace Otus.Graphs.Begining.FirstGraph
         {
             var matrix = new int[_graphFileInfo.VertexesCount + 1, _graphFileInfo.VertexesCount + 1];
 
-            for (var i = 0; i < _graphFileInfo.VertexesCount - 1; i++)
+            for (var i = 0; i < _graphFileInfo.VertexesCount; i++)
             {
-                var vertexToCompare = _graphFileInfo.Vertexes[i][0];
-                matrix[vertexToCompare, _graphFileInfo.Vertexes[i][1]] = 1;
+                var vertexToCompare = _graphFileInfo.Vertexes[i].First;
+                var currentVertexPair = _graphFileInfo.Vertexes[i].Second;
 
-                for (var j = i + 1; j < _graphFileInfo.VertexesCount; j++)
+                if (vertexToCompare == currentVertexPair)
                 {
-                    var currentFromVertex = _graphFileInfo.Vertexes[j][0];
-                    var currentToVertex = _graphFileInfo.Vertexes[j][1];
-                    if (vertexToCompare == currentFromVertex)
-                    {
-                        matrix[vertexToCompare, currentFromVertex] = 1;
-                    }
-                    if (vertexToCompare == currentToVertex)
-                    {
-                        matrix[vertexToCompare, currentToVertex] = 1;
-                    }
+                    matrix[vertexToCompare, vertexToCompare] = 2;
+                }
+                else
+                {
+                    matrix[vertexToCompare, currentVertexPair] = 1;
+                    matrix[currentVertexPair, vertexToCompare] = 1;
                 }
             }
 

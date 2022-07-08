@@ -26,8 +26,8 @@ namespace Tests
 
         private void CheckEdgeInfo(GraphFileInfo graphInfo, int index, int firstVertex, int secondVertex)
         {
-            Assert.That(graphInfo.Vertexes[index][0], Is.EqualTo(firstVertex));
-            Assert.That(graphInfo.Vertexes[index][1], Is.EqualTo(secondVertex));
+            Assert.That(graphInfo.Vertexes[index].First, Is.EqualTo(firstVertex));
+            Assert.That(graphInfo.Vertexes[index].Second, Is.EqualTo(secondVertex));
         }
 
         #endregion

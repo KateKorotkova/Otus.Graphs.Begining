@@ -23,15 +23,16 @@ namespace Otus.Graphs.Begining.Utils
 
         #region SupportMethods
 
-        private static int[][] GetVertexes(string[] allLines)
+        private Vertex[] GetVertexes(string[] allLines)
         {
             var vertexesCounter = 0;
-            var vertexes = new int[allLines.Length - 1][];
+            var vertexes = new Vertex[allLines.Length - 1];
 
             for (var i = 1; i < allLines.Length; i++)
             {
                 var currentEdgeInfo = allLines[i].Split(' ').Select(int.Parse).ToArray();
-                vertexes[vertexesCounter++] = currentEdgeInfo;
+                
+                vertexes[vertexesCounter++] = new Vertex(currentEdgeInfo[0], currentEdgeInfo[1]);
             }
 
             return vertexes;
