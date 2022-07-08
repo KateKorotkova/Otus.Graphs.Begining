@@ -22,6 +22,18 @@ namespace Tests
             CheckMatrixRow(result, 5, new[] { 0, 0, 0, 0, 2 });
         }
 
+        [TestCase(1, 1, ExpectedResult = false)]
+        [TestCase(1, 2, ExpectedResult = true)]
+        [TestCase(2, 3, ExpectedResult = true)]
+        [TestCase(4, 5, ExpectedResult = false)]
+        [TestCase(5, 5, ExpectedResult = true)]
+        public bool Can_Check_Adjacency(int firstVertex, int secondVertex)
+        {
+            var graph = new FirstGraphProcessor();
+
+            return graph.AreAdjacency(firstVertex, secondVertex);
+        }
+
 
         #region Support Methods
 

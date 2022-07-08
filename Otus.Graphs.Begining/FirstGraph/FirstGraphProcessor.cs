@@ -34,5 +34,12 @@ namespace Otus.Graphs.Begining.FirstGraph
 
             return matrix;
         }
+
+        public bool AreAdjacency(int firstVertex, int secondVertex)
+        {
+            var matrix = GetAdjacencyMatrix();
+
+            return matrix[firstVertex, secondVertex] != 0;
+        }
     }
 }
