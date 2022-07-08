@@ -1,0 +1,11 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=92dfec23_002Deeb1_002D41fb_002Daca4_002Dd4a0c5beb6e2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Can_Read_File_With_Graph_Points" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B974AF26-4B23-4F1F-926C-483F3FB476BD::.NETCoreApp,Version=v3.1::Tests.FileReaderTests.Can_Read_File_With_Graph_Points&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=db13625b_002D7b29_002D4ece_002D9d3c_002D8834de1eab3f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Can_Read_File_With_Graph_Points #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B974AF26-4B23-4F1F-926C-483F3FB476BD::.NETCoreApp,Version=v3.1::Tests.FileReaderTests.Can_Read_File_With_Graph_Points&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
