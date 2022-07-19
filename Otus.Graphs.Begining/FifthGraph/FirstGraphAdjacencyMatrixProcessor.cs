@@ -1,16 +1,16 @@
 ﻿using System.Collections.Generic;
 using Otus.Graphs.Begining.Utils;
 
-namespace Otus.Graphs.Begining.FirstGraph
+namespace Otus.Graphs.Begining.FifthGraph
 {
-    public class FirstGraphAdjacencyMatrixProcessor
+    public class FifthGraphAdjacencyMatrixProcessor
     {
         public int[,] Matrix { get; }
 
 
-        public FirstGraphAdjacencyMatrixProcessor()
+        public FifthGraphAdjacencyMatrixProcessor()
         {
-            var graphFileInfo = new FileReader().GetGraphPoints(Consts.FirstGraphFileName);
+            var graphFileInfo = new FileReader().GetWeightedGraphPoints(Consts.FifthGraphFileName);
 
             Matrix = GetAdjacencyMatrix(graphFileInfo);
         }
@@ -43,7 +43,7 @@ namespace Otus.Graphs.Begining.FirstGraph
 
         #region Support Methods
 
-        private int[,] GetAdjacencyMatrix(GraphFileInfo graphFileInfo)
+        private int[,] GetAdjacencyMatrix(WeightedGraphFileInfo graphFileInfo)
         {
             var matrix = new int[graphFileInfo.VertexesCount + 1, graphFileInfo.VertexesCount + 1];
 
@@ -59,7 +59,6 @@ namespace Otus.Graphs.Begining.FirstGraph
                 else
                 {
                     matrix[vertexToCompare, currentVertexPair] = 1;
-                    matrix[currentVertexPair, vertexToCompare] = 1;
                 }
             }
 

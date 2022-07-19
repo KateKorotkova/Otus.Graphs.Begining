@@ -11,7 +11,7 @@ namespace Tests
             var graphInfo = new FileReader().GetGraphPoints(Consts.FirstGraphFileName);
 
             Assert.That(graphInfo.VertexesCount, Is.EqualTo(5));
-            Assert.That(graphInfo.EdgesCount, Is.EqualTo(6));
+            Assert.That(graphInfo.EdgesCount, Is.EqualTo(5));
             Assert.That(graphInfo.Vertexes.Length, Is.EqualTo(5));
             
             CheckEdgeInfo(graphInfo, 0, 1, 2);
