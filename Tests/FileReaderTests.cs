@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using Otus.Graphs.Begining.Utils;
+using Otus.Graphs.Begining.Utils.Dtos;
 
 namespace Tests
 {
