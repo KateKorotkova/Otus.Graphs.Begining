@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using System.Linq;
+using Otus.Graphs.Begining.Utils.Dtos;
 
 namespace Otus.Graphs.Begining.Utils
 {

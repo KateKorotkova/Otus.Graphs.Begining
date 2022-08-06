@@ -1,14 +1,5 @@
-﻿namespace Otus.Graphs.Begining.Utils
+﻿namespace Otus.Graphs.Begining.Utils.Dtos
 {
-    public class WeightedGraphFileInfo
-    {
-        public int VertexesCount { get; set; }
-
-        public int EdgesCount { get; set; }
-
-        public VertexWithWeight[] Vertexes { get; set; }
-    }
-
     public class VertexWithWeight : Vertex
     {
         public int Weight { get; set; }

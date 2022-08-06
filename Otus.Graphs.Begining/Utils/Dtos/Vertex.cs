@@ -1,15 +1,5 @@
-﻿namespace Otus.Graphs.Begining.Utils
+﻿namespace Otus.Graphs.Begining.Utils.Dtos
 {
-    public class GraphFileInfo
-    {
-        public int VertexesCount { get; set; }
-
-        public int EdgesCount { get; set; }
-
-        public Vertex[] Vertexes { get; set; }
-    }
-
-
     public class Vertex
     {
         public int First { get; set; }

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Otus.Graphs.Begining.Utils;
+using Otus.Graphs.Begining.Utils.Dtos;
 
 namespace Otus.Graphs.Begining.FirstGraph
 {
